@@ -15,8 +15,9 @@ EINSTEIN = {
 with open("laureates.csv", "r") as f:
     reader = csv.DictReader(f)
     laureates = list(reader)
+    pprint(reader)
 
-for laureate in laureates:
-    if laureate["surname"] == "Einstein":
-        pprint(laureate)
-        break
+# for laureate in laureates:
+#     if laureate["surname"] == "Soyinka":
+#         pprint(laureate)
+#         break
